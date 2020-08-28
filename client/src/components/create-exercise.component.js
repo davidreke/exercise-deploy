@@ -27,7 +27,7 @@ export default class CreateExercise extends Component {
 
   componentDidMount(){
     // axios.get fires the get request associated with the url you pass in as an argument
-    axios.get(BACKEND_URL+'/user' )
+    axios.get(BACKEND_URL+'/users' )
       .then((response) =>{
         if(response.data.length > 0){
           this.setState(
